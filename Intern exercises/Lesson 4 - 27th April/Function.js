@@ -6,7 +6,7 @@ import styles from "./Styles";
 export default function Function() {
   const [names, setName] = useState("Empty")
   const [age, setAge] = useState(0)
-  const [checked, setCheck] = useState(null)
+  const [checked, setCheck] = useState(false)
 
   const Check = () => {
     setCheck(checked ? false : true )
