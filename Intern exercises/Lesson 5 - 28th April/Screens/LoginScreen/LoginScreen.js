@@ -22,15 +22,15 @@ function LoginScreen({ navigation }) {
           <AProps atext='Name...' inputStyle={{ marginTop: 120 }}/>
           <AProps atext='Password... ' inputStyle={{ marginTop: 20 }} />
           <TouchableOpacity>
-              <Text style={styles.forgottext} >Forgot Password ?</Text>
+              <Text style={styles.forgottext} >🔒 Forgot Password ?</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => navigation.navigate('Home')} style={[styles.button, {width: 320}]}>
               <Text style={styles.ok}>Log In</Text>
           </TouchableOpacity>
           <View style = {{alignSelf:'center', flexDirection:'row'}}>
-              <Text style={{fontSize: 15}}>Don't have an account ? </Text>
+              <Text style={{fontSize: 16}}>Don't have an account ? </Text>
           <TouchableOpacity onPress={() => navigation.navigate('Signup')}>
-              <Text style = {{color:'#fb5b5a', fontSize: 15}}>Sign Up</Text>
+              <Text style = {{color:'#fb5b5a', fontSize: 16}}>Sign Up</Text>
           </TouchableOpacity>
           </View>
         </View>

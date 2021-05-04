@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   },
   goback:{
     backgroundColor:"#fb5b5a",
-    borderRadius:25,
+    borderRadius:5,
     padding:10
   },
   smalltext:{
@@ -55,13 +55,13 @@ const styles = StyleSheet.create({
     alignSelf:'center',
     justifyContent:'center',
     color:'white',
-    fontSize: 15
+    fontSize: 16
   },
   forgottext:{
     textAlign:'right',
     right: 30,
     color:'black',
-    fontSize: 15
+    fontSize: 16
   },
   box:{
     flexDirection:'row',
