@@ -4,6 +4,7 @@ import HomeScreen from '../Screens/HomeScreen/HomeScreen';
 import LoginScreen from '../Screens/LoginScreen/LoginScreen';
 import SignupScreen from '../Screens/SignupScreen/SignupScreen';
 import SplashScreen from '../Screens/SplashScreen/SplashScreen';
+import BottomNav from './BottomTab'
 
 const Stack = createStackNavigator();
 
@@ -20,7 +21,8 @@ const Navigator = () => (
       component={LoginScreen}/>
       <Stack.Screen 
       name="Home" 
-      component={HomeScreen}/>
-      </Stack.Navigator>
-)
+      component={BottomNav}/>
+    </Stack.Navigator>
+  )
+
 export default Navigator

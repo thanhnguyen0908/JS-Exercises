@@ -1,12 +1,19 @@
-import React from 'react';
-import { ImageBackground, View, Image, Text } from 'react-native';
-import { background } from '../../assets';
+import React, {useEffect} from 'react';
+import { View, Image, Text } from 'react-native';
 import styles from '../Styles/Styles';
 import { logo } from '../../assets';
-
+import {getData} from '../../DataStorage/DataStorage';
 
 function SplashScreen({ navigation }) {
-    setTimeout(() => { navigation.navigate('Login'), 3000})
+  const checkLogin = async() => {
+  const isLogin = await getData()
+  navigation.navigate(isLogin ? 'Home' : 'Login')
+  }
+    useEffect(() => {
+      setTimeout(() =>{
+        checkLogin();
+      }, 2000)
+    }) 
     return (
         <View style = {{flexDirection:'row', top: 300, justifyContent:'space-around'}}>
           <Image style={styles.logo} source = {logo}/>

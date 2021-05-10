@@ -2,26 +2,15 @@ import {StyleSheet} from 'react-native'
 
 const styles = StyleSheet.create({
   body: {
-    flex:1,
+    flex: 1,
     backgroundColor: "white"
   },
-  inputUser: {
-    borderBottomWidth:1,
-    borderColor: 'red',
-    height: 45,
-    marginBottom:5,
-    color:'black',
-    width: 340,
-    alignSelf:'center',
-    justifyContent:'center',
-    fontSize: 20
-  },
   button: {
-    backgroundColor:"#fb5b5a",
+    backgroundColor:"red",
     height:40,
     alignSelf:"center",
     justifyContent:"center",
-    marginTop:40,
+    marginTop:20,
     marginBottom:5,
     borderRadius:5
   },
@@ -29,31 +18,31 @@ const styles = StyleSheet.create({
     width: 100,
     height: 100,
     justifyContent:'flex-end',
-    borderRadius: 50,
+    borderRadius: 5,
     marginTop: 10
   },
   bigtext:{
     fontSize: 35,
-    top: 40,
+    top: 10,
     color: 'black',
     borderBottomWidth:1,
-    borderColor: 'grey',
-    width: 340,
+    borderColor: '#dcdcdc',
+    width: 320,
     alignSelf:'center',
     justifyContent:'center',
 
   },
   goback:{
-    backgroundColor:"#fb5b5a",
+    backgroundColor:"red",
     borderRadius:5,
     padding:10
   },
   smalltext:{
-    alignSelf:'center'
-  },
+    textAlign:'center', 
+    color:'red', 
+    marginTop:5},
   ok:{
-    alignSelf:'center',
-    justifyContent:'center',
+    textAlign:'center',
     color:'white',
     fontSize: 16
   },
@@ -61,21 +50,21 @@ const styles = StyleSheet.create({
     textAlign:'right',
     right: 30,
     color:'black',
-    fontSize: 16
+    fontSize: 16,
+    marginTop: 10
   },
   box:{
     flexDirection:'row',
-    borderBottomWidth: 1,
+    borderBottomWidth: 2,
     borderColor:'red',
     height: 40,
-    width: 340,
-    alignSelf:'center',
-    flexWrap:'wrap',
+    width: '80%',
+    alignSelf: 'center',
     marginTop: 1,
-    },
+  },
   input:{
-    fontSize: 18, 
-    textAlign:'right'
+    fontSize: 17,
+    flex: 1,
     },
   titles:{
     fontSize:30,
@@ -83,6 +72,67 @@ const styles = StyleSheet.create({
     right: 10,
     fontWeight:'bold',
     marginTop: 20
-  }
+  },
+  titleslow:{
+    right: 5, 
+    fontSize: 20
+  },
+  warn:{
+    fontSize:16
+  },
+  wholeview:{
+    flexDirection:'row', 
+    marginTop: 20, 
+    justifyContent:'space-around'},
+  alignwarn:{
+    alignSelf:'center', 
+    flexDirection:'row'},
+  titlesmall:{
+    flex: 1,
+    flexDirection:'row',
+    left: 10},
+  redlayer:{
+    flex: 2.1,
+    backgroundColor:'red'
+  },
+  loadingbar: {
+    flex:0.7, 
+    flexDirection:'row', 
+    alignItems:'center', 
+    justifyContent:'center'  },
+  redbar: {
+    width:"30%", 
+    height:'20%', 
+    backgroundColor: 'red',  
+    borderBottomStartRadius:5, 
+    borderTopStartRadius:5,
+    marginTop: 10 },
+  silverbar:{
+    width:"55%", 
+    height:'20%', 
+    backgroundColor: 'silver',  
+    borderBottomEndRadius:5, 
+    borderTopEndRadius:5,
+    marginTop: 10 },
+  rowtext:{
+    marginTop: 1, 
+    flexDirection:'row', 
+    justifyContent:'space-between', 
+    width:"85%"
+  },
+  buttononhome:{
+    flex: 1, 
+    margin: '1.1%', 
+    aspectRatio: 1.4, 
+    backgroundColor:'white', 
+    borderRadius: 5, 
+    shadowColor: "#000",
+    shadowOffset: {
+	  width: 0,
+	  height: 1,
+    },
+    shadowOpacity: 0.22,
+    shadowRadius: 2.22,
+    elevation: 3,}
 });
 export default styles
