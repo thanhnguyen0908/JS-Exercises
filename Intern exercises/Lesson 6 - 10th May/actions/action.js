@@ -1,4 +1,4 @@
-import {INCREASE_COUNTER, DECREASE_COUNTER} from './counts';
+import {INCREASE_COUNTER, DECREASE_COUNTER} from '../constants/index';
 
 export const increaseCounter = () => ({
   type: INCREASE_COUNTER,
